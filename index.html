@@ -3,89 +3,95 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Your Name - Resume</title>
+  <title>Watcharapong - Resume</title>
   <style>
     body {
       font-family: "Segoe UI", sans-serif;
       margin: 0;
-      padding: 40px;
-      background: #f9f9f9;
+      padding: 0;
+      background: #e3f2fd;
       color: #333;
     }
-    h1, h2, h3 {
-      margin: 0;
-      color: #2c3e50;
-    }
-    .container {
-      max-width: 900px;
-      margin: auto;
+    .resume {
+      display: flex;
+      max-width: 1000px;
+      margin: 40px auto;
       background: #fff;
-      padding: 30px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.05);
       border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.05);
+      overflow: hidden;
     }
-    .section {
-      margin-bottom: 30px;
+    .left-panel {
+      background: #bbdefb;
+      width: 30%;
+      padding: 30px 20px;
+      color: #0d47a1;
+      text-align: center;
     }
-    .title {
+    .left-panel img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+    .right-panel {
+      width: 70%;
+      padding: 40px;
+    }
+    h1 {
       font-size: 28px;
-      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-size: 20px;
       color: #007acc;
+      border-bottom: 1px solid #e0e0e0;
+      padding-bottom: 4px;
+      margin-top: 30px;
     }
-    ul {
-      padding-left: 20px;
-    }
-    .job-title {
-      font-weight: bold;
-    }
-    .date {
-      color: #666;
-      font-size: 14px;
+    .contact, .skills, .education, .summary {
+      margin-bottom: 20px;
     }
     .skills span {
       display: inline-block;
       background: #e3f2fd;
       color: #0277bd;
-      margin: 4px;
-      padding: 6px 10px;
+      margin: 4px 4px 0 0;
+      padding: 6px 12px;
       border-radius: 20px;
-      font-size: 14px;
+      font-size: 13px;
+    }
+    .job-title {
+      font-weight: bold;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+    .date {
+      font-size: 13px;
+      color: #777;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Your Name</h1>
-    <p>Email: you@example.com | GitHub: github.com/yourname | Location: Bangkok, Thailand</p>
+  <div class="resume">
+    <div class="left-panel">
+      <img src="assets/profile.jpg" alt="Profile Photo">
+      <div class="summary">
+        <h2>Contact</h2>
+        <p><b>Email:</b> Watcharapong_aem@hotmail.com</p>
+        <p><b>GitHub:</b> https://github.com/Aemitez</p>
+        <p><b>Location:</b> Bangkok, Thailand</p>
+      </div>
 
-    <div class="section">
-      <h2 class="title">Summary</h2>
-      <p>
-        Software Developer with 8+ years of experience in backend (Go, C#) and frontend (Angular, Vue) development. Passionate about clean code, system performance, and Agile practices.
-      </p>
-    </div>
-
-    <div class="section">
-      <h2 class="title">Experience</h2>
-      <p class="job-title">Web Application Developer — Thai Beverage Plc</p>
-      <p class="date">2020 – Present</p>
-      <ul>
-        <li>Developed and maintained enterprise-grade backend APIs using Golang and ASP.NET Core.</li>
-        <li>Worked on frontend with Angular and Vue to enhance UX and performance.</li>
-        <li>Integrated systems with SAP and real-time data platforms.</li>
-      </ul>
-
-      <p class="job-title">C# Developer — iConext Co., Ltd</p>
-      <p class="date">2017 – 2020</p>
-      <ul>
-        <li>Developed internal business applications using ASP.NET MVC and Windows Forms.</li>
-        <li>Integrated systems with Microsoft Dynamics CRM, FTP, and SSO.</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2 class="title">Skills</h2>
       <div class="skills">
+        <h2>Skills</h2>
         <span>Go</span>
         <span>C#</span>
         <span>ASP.NET Core</span>
@@ -98,16 +104,42 @@
         <span>Kafka</span>
         <span>Jira</span>
       </div>
+
+      <div class="education">
+        <h2>Education & Training</h2>
+        <ul>
+          <li>Domain Driven Design – Odd-e Thailand</li>
+          <li>Introduction to Scrum – Odd-e Thailand</li>
+          <li>ASP.NET Core 2 and Basic EF Core – iConext Co., Ltd</li>
+          <li>Vue JS – iConext Co., Ltd</li>
+        </ul>
+      </div>
     </div>
 
-    <div class="section">
-      <h2 class="title">Education & Training</h2>
-      <ul>
-        <li>Domain Driven Design – Odd-e Thailand</li>
-        <li>Introduction to Scrum – Odd-e Thailand</li>
-        <li>ASP.NET Core 2 and Basic EF Core – iConext Co., Ltd</li>
-        <li>Vue JS – iConext Co., Ltd</li>
-      </ul>
+    <div class="right-panel">
+      <h1>Watcharapong Juinakorn</h1>
+      <div class="summary">
+        <h2>Summary</h2>
+        <p>Software Developer with 8+ years of experience in backend (Go, C#) and frontend (Angular, Vue) development. Passionate about clean code, system performance, and Agile practices.</p>
+      </div>
+
+      <div class="experience">
+        <h2>Experience</h2>
+        <p class="job-title">Web Application Developer — Thai Beverage Plc</p>
+        <p class="date">2020 – Present</p>
+        <ul>
+          <li>Developed and maintained enterprise-grade backend APIs using Golang and ASP.NET Core.</li>
+          <li>Worked on frontend with Angular and Vue to enhance UX and performance.</li>
+          <li>Integrated systems with SAP and real-time data platforms.</li>
+        </ul>
+
+        <p class="job-title">C# Developer — iConext Co., Ltd</p>
+        <p class="date">2017 – 2020</p>
+        <ul>
+          <li>Developed internal business applications using ASP.NET MVC and Windows Forms.</li>
+          <li>Integrated systems with Microsoft Dynamics CRM, FTP, and SSO.</li>
+        </ul>
+      </div>
     </div>
   </div>
 </body>
